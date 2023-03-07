@@ -51,9 +51,11 @@ public class LeaderHandler : MonoBehaviour
             handler = dinos[i].GetComponent<LeaderHandler>();
             handler.isLeader = false;
             handler.follow.toFollow = dinos[i == dinos.Count - 1 ? 0 : i + 1].follow.dino;
+            // handler.follow.dino.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         }
         handler = dinos[(int)type].GetComponent<LeaderHandler>();
         handler.isLeader = true;
         handler.follow.toFollow = null;
+        // handler.follow.dino.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
     }
 }
