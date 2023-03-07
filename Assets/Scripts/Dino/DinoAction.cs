@@ -14,9 +14,9 @@ public class DinoAction : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            state.changeState(ActionType.IDLE);
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-            state.changeState(ActionType.WALKING);
+        // if (Input.GetKeyDown(KeyCode.Alpha1))
+        //     state.changeState(ActionType.IDLE);
+        // if (Input.GetKeyDown(KeyCode.Alpha2))
+        //     state.changeState(ActionType.WALKING);
     }
 }
